@@ -58,6 +58,9 @@
             <div class="card-body px-lg-3 py-lg-3">
               <div class="text-center text-muted mb-4 mt-2">
                 <h5>Silahkan Login Dengan NIS dan Password</h5>
+                <?php if($this->session->flashdata('err') == TRUE): ?>
+                  <h5 class="text-danger"><strong><?= $this->session->flashdata('err') ?></strong></h5>
+                <?php endif; ?>
               </div>
               <form role="form" action="<?= site_url('login/action') ?>" method="post">
                 <div class="form-group mb-3">
@@ -65,7 +68,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
                     </div>
-                    <input class="form-control" placeholder="NIS" type="number" name="nis">
+                    <input class="form-control" placeholder="NISN" type="number" name="nisn">
                   </div>
                 </div>
                 <div class="form-group">
@@ -92,7 +95,7 @@
       <div class="row align-items-center justify-content-xl-between">
         <div class="col-xl-6">
           <div class="copyright text-center text-xl-left text-white">
-            &copy; <?= date('Y') ?> <strong>Al Hikmah</strong>
+            <strong>&copy; <?= date('Y') ?> SDIT AL HIKMAH</strong>
           </div>
         </div>
       </div>
