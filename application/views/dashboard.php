@@ -137,7 +137,7 @@
                   <h4 class="mb-0"><strong>Data Kelulusan</strong></h4>
                 </div>
                 <div class="col text-right">
-                  <a href="<?= site_url('dashboard/export/' . $siswa->id) ?>" class="btn btn-sm btn-primary"><i class="fas fa-print"></i>&nbsp;&nbsp;Cetak Laporan Kelulusan</a>
+                  <a href="<?= site_url('dashboard/export/' . $siswa->id) ?>" class="btn btn-sm btn-primary" target="__BLANK"><i class="fas fa-print"></i>&nbsp;&nbsp;Cetak Laporan Kelulusan</a>
                 </div>
               </div>
             </div>
