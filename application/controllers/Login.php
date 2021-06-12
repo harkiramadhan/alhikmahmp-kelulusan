@@ -30,6 +30,10 @@ class Login extends CI_Controller{
             $this->session->set_flashdata("err", 'NISN Atau Password Salah !');
             redirect($_SERVER['HTTP_REFERER'], 'refresh');
         }
-        
+    }
+
+    function logout(){
+        $this->session->sess_destroy();
+        redirect('login', 'refresh');
     }
 }
